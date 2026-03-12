@@ -3,7 +3,7 @@ using namespace std;
 
 class Stats {
 public:
-static int sum(const int a[], int n) {
+static int sum(const int a[], int n) {//llama sin crear un objeto
 int total = 0;
 for (int i = 0; i < n; i++) total += a[i];
 return total;
@@ -20,3 +20,4 @@ cout << "Sum: " << Stats::sum(grades, n) << "\n";
 cout << "Average: " << Stats::average(grades, n) << "\n";
 return 0;
 }
+
