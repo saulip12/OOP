@@ -67,7 +67,7 @@ def es_numero_valido(token: str) -> bool:
  
  
 # ----------------------------------------------------------------------
-# Lógica del método de Sturges (con las reglas particulares pedidas)
+# Lógica del método de Sturges 
 # ----------------------------------------------------------------------
  
 class ResultadoSturges:
@@ -148,7 +148,7 @@ def calcular_sturges(datos, d, decimales_datos) -> ResultadoSturges:
                     idx = i
                     break
         if idx is None:
-            # Por seguridad (no debería pasar), se asigna a la clase más cercana
+            # Por seguridad se asigna a la clase más cercana
             distancias = [abs(x - (limites[i] + limites[i + 1]) / 2) for i in range(res.k_elegido)]
             idx = distancias.index(min(distancias))
         conteos[idx] += 1
